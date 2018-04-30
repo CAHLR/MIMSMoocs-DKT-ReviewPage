@@ -1,0 +1,532 @@
+body { font: 12px Arial;}
+svg{
+	display: inline;
+}
+
+.label { 
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight:bold;
+}
+
+.path,
+.line {
+    fill: none;
+    stroke: black;
+    stroke-width: 2;
+    shape-rendering: crispEdges;
+    opacity:60%;
+    /*margin: 100px 100px auto 100px;*/
+}
+.skill_name{ 
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight:bold;
+  font-style: italic;
+  /*float:left;*/
+}
+
+
+.circle{
+	fill:none;
+	color:white;
+}
+
+#radio_button{
+	position: relative;
+	width: 80%;
+    margin: 0 auto;
+    /*align-items: center;*/
+    display: inline-block;
+	text-align: center;
+
+	margin: auto 100px auto 100px;
+}
+
+.course_progress{
+	position:relative;
+	display:inline-block;
+	margin: auto auto auto 30px;
+	 width:100%;
+	  height:80px;
+}
+
+.container{
+	position:relative;
+	margin: auto auto auto 30px;
+	 width:100%;
+	  height:420px;
+	  display: inline-block;
+	   float:left;
+	   /*added for collapsible */
+	   padding: 0 18px;
+  /*display: none;*/
+  overflow: hidden;
+  /*background-color: #f1f1f1;*/
+}
+.radial{
+	position: relative;
+	width: 45%;
+	height:260px;
+    margin: auto auto auto 30px;
+    /*vertical-align:top;*/
+    /*align-items: left;*/
+    /*display: inline-block;*/
+	text-align: left;
+	float:left;
+	/*margin: 0px 100px 0px 100px;*/
+}
+
+.link_container{
+    margin: auto auto auto 30px;
+    /*vertical-align:top;*/
+    /*align-items: left;*/
+    /*display: inline-block;*/
+	text-align: left;
+	float:left;
+	/*margin: 0px 100px 0px 100px;*/
+}
+.tab{
+	display:inline-block; 
+      margin-left: 14px;
+    font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+a:link {
+    text-decoration: underline;
+}
+
+a:visited {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.link{
+	position: relative;
+	width: 45%;
+	height:260px;
+    margin: auto auto auto auto;
+    /*vertical-align:top;*/
+    /*align-items: left;*/
+    /*display: inline-block;*/
+	text-align: left;
+	float:left;
+	/*margin: 0px 100px 0px 100px;*/
+}
+
+.g-bar{
+	position: relative;
+	width: 80%;
+    margin: auto auto auto 30px;
+    vertical-align:top;
+    /*align-items: left;*/
+    display: inline-block;
+	text-align: left;
+	float:center;
+}
+#module,#section,#subsection {
+	margin: 0 10px 0 10px;
+}
+
+.radial-progress__text {
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  fill: black;
+  text-anchor:middle;
+}
+.radial-progress__value {
+  fill: #b72667;
+  stroke: black;
+  stroke-width:0;
+}
+.radial-progress__value_best {
+  fill: #b72667;
+  stroke: black;
+  stroke-width:0;
+}
+
+.radial-progress__value_better {
+  fill: orange;
+  stroke: black;
+  stroke-width:0;
+}
+
+.radial-progress__value_good {
+  fill: #f20000;
+  stroke: black;
+  stroke-width:0;
+}
+
+.radial-progress__value_top{
+  fill: #00a0e3;
+  stroke: black;
+  stroke-width:0;
+}
+
+.radial-progress__background {
+  /*fill: #8c8c8c;*/
+  fill:lightgrey;
+  stroke: black;
+  stroke-width:0;
+}
+.progress, .top_progress {
+  padding: 20px;
+  display: inline;
+  width: 25%;
+  height:150px;
+}
+
+.progress_score
+{
+  padding: 20px;
+  display: inline;
+	text-align: center;
+	/*float:center;*/
+  	/*position: relative;*/
+ 	width: 25%;
+	height:20px;
+    /*margin: auto auto auto auto;*/
+}
+ .top_progress_score {
+  padding: 20px;
+  display: inline;
+	text-align: left;
+	/*float:center;*/
+  	/*position: relative;*/
+ 	width: 25%;
+	height:20px;
+    /*margin: auto auto auto 15px;*/
+}
+.message {
+  /*padding: 20px;*/
+  display: inline;
+	text-align: center;
+	float:center;
+  	/*position: relative;*/
+ 	width: 25%;
+	height:20px;
+    /*margin: auto auto auto auto;*/
+}
+
+.tab_avg {
+  display:inline; 
+      margin-left: 0px;
+    font-family: Arial, sans-serif;
+  font-size: 14px;
+	float:center;
+    /*margin: auto auto auto auto;*/
+}
+.tab_best {
+  display:inline; 
+      margin-left: 8px;
+    font-family: Arial, sans-serif;
+  font-size: 14px;
+	color:#b72667;
+	font-weight: bold;
+	float:center;
+    /*margin: auto auto auto auto;*/
+}
+.tab_better {
+	display:inline; 
+      margin-left: 8px;
+    font-family: Arial, sans-serif;
+  font-size: 14px;
+	color:orange;
+	font-weight: bold;
+	float:center;
+    /*margin: auto auto auto auto;*/
+}
+
+.tab_good {
+  /*display:inline; */
+      margin-left: 8px;
+    font-family: Arial, sans-serif;
+  font-size: 14px;
+	color:#f20000;
+	font-weight: bold;
+	float:center;
+    /*margin: auto auto auto auto;*/
+}
+
+
+.legend{
+  height:20;
+	font-family: Arial, sans-serif;
+  font-size: 12px;
+  display: block;
+}
+
+.bar{
+	fill: green;
+}
+.bar_1{
+	/*fill: #8c8c8c;*/
+	fill:lightgrey;
+}
+.fa-check-square{
+	/*color:green;*/
+	/*text-anchor:middle;*/
+}
+
+.help-tip{
+    position: absolute;
+    top: 15px;
+    left: 350px;
+    text-align: center;
+    font-weight:bold;
+    background-color: white;
+    border:2px solid transparent;
+    border-color:black;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    line-height: 13px;
+    cursor: default;
+}
+
+.help-tip:before{
+    content:'?';
+    font-weight: bold;
+    color:black;
+}
+
+.help-tip:hover p{
+    display:block;
+    transform-origin: 100% 0%;
+    font-weight:bold;
+    -webkit-animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+
+}
+
+.help-tip p{    /* The tooltip */
+    display: none;
+    font-weight:bold;
+    text-align: left;
+    background-color: #1E2021;
+    padding: 10px;
+    width: 300px;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    right: -4px;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.help-tip p:before{ /* The pointer of the tooltip */
+    position: absolute;
+    content: '';
+    width:0;
+    height: 0;
+    border:6px solid transparent;
+    border-bottom-color:#1E2021;
+    left:10px;
+    top:-12px;
+    font-weight:bold;
+}
+
+.help-tip p:after{ /* Prevents the tooltip from being hidden */
+    width:100%;
+    font-weight:bold;
+    height:40px;
+    content:'';
+    position: absolute;
+    top:-40px;
+    left:0;
+}
+
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+	/*display:inline-block;*/
+  background-color: white;
+  cursor: pointer;
+
+  /*padding: 18px;*/
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  font-weight:bold;
+  font-family: Arial, sans-serif;
+   /*margin:30px 0;*/
+  /*margin-left: 0px;
+  margin-top: 10px;*/
+  margin: auto auto  auto auto;
+}
+
+.tab_head{
+	display:inline-block; 
+      margin-left: 14px;
+    font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover{
+  /*background-color: #ccc;*/
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content{
+ /*padding: 0 px;*/
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+     margin: auto auto auto auto;
+}
+
+.content1 {
+ /*padding: 0 px;*/
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+     margin: auto auto auto auto;
+}
+
+.collapsible:after {
+	position:relative;
+	font-family: 'FontAwesome';
+  content: "\f054";
+    /*content: '\f078';  Unicode character for "plus" sign (+) */
+    font-size: 20px;
+    color: black;
+    float: left;
+    margin-left: 0px;
+    color:#0099CD;
+}
+
+ .active:after{
+	/*F078 */
+  content: '\f078';
+  color:#0099CD;
+	font-family: 'FontAwesome';
+    /*content: "\f054";  Unicode character for "minus" sign (-) */
+}
+
+.tooltip {
+    position: absolute;
+    z-index: 10;
+    visibility: hidden;
+    /*background-color: black;*/
+    /*text-align: center;*/
+    padding: 4px;
+    border-radius: 4px;
+    font-weight: bold;
+    /*color: white;*/
+	text-align: left;
+    background-color: #1E2021;
+    padding: 10px;
+    /*width: 300px;*/
+    /*position: relative;*/
+    border-radius: 3px;
+    /*box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);*/
+    /*right: -4px;*/
+    color: #FFF;
+    font-size: 13px;
+    line-height: 1.4;
+
+}
+
+.tooltip:after {
+       content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+.here{
+	font-family: Arial, sans-serif;
+	width:120px;
+  height:15px;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	 color:red;
+   display: block;
+
+   /*position: absolute;*/
+/*     padding-left:0px;
+   padding-top:12px;
+     
+  position: relative;*/
+     /*vertical-align: bottom;*/
+    /*margin-bottom:15px;*/
+}
+.legend1{
+	font-size:14px;
+	display:block;
+}
+h3{
+	font-size:16px;
+}
+.module_name{
+position: relative;
+width: 80%;
+margin: 0 auto;
+align-items: center;
+display: block;
+text-align: center;
+
+margin: 0px 100px 0px 100px;
+}
+
+.fa-custom-stack{
+/*display: inline-block;*/
+/*margin-top: 0%;*/
+/*position: relative;*/
+/*width: 2em;
+height: 2em;
+line-height: 2em;*/
+/*vertical-align: middle;*/
+}
+
+.fa-stack {
+  text-align: center;
+  vertical-align: top !important;
+}
+
+.fa-caret-down {
+  vertical-align: top !important;
+    text-align: center !important;
+  /*position: absolute;*/
+  /*bottom: 0;*/
+}
+
+.fa-check-circle {
+  vertical-align: top !important;
+
+  /*position: absolute;*/
+  /*top: 0;*/
+}
+
+.fa_custom{
+  vertical-align: bottom;
+  display: block;
+/*display: inline-block;*/
+font: normal normal normal 14px/1 FontAwesome;
+    font-size: 14px;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+}
+

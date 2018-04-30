@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+  <link rel="stylesheet" href="https://people.ischool.berkeley.edu/~niavivek/Design_dot/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all" type="text/css">
+</head>
+
+<body onload="d3Radial();d3progress(true);">
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://people.ischool.berkeley.edu/~niavivek/Design_dot/radial.js"></script>
+<script src="https://people.ischool.berkeley.edu/~niavivek/Design_dot/d3Progress.js"></script>
+
+<div id="overall_progress">
+	<button class="collapsible" id="collapsible_1"><span class="tab_head">Course Progress Bar:</span></button>
+	<div class="content">
+	<div class="module_name" id="module_name"></div>
+  <div id="radio_button">
+    <input type="radio" id="module"
+     name="module" value="module" checked="checked" onclick="d3progress(false);">
+    <label for="module">Module view</label>
+
+    <input type="radio" id="section"
+     name="module" value="section" onclick="d3progress(false);">
+    <label for="section">Section view</label>
+
+    <input type="radio" id="subsection"
+     name="module" value="subsection" onclick="d3progress(false);">
+    <label for="subsection">Sub-section view</label>
+  </div><br><br>
+  <div class="course_progress"></div>
+  <div class="legend1"></div>
+</div>
+</div>
+
+<div id="skill">
+	<h2>Skills:</h2>
+
+</div>
+</body>

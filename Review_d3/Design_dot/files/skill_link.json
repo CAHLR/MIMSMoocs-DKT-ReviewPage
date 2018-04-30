@@ -1,0 +1,14 @@
+{"Skills":[{"Name":"Fundamentals",
+				"ID":1,
+				"Link_label":["Intro to Asynchronous Fundamentals Video","Intro to Asynchronous Fundamentals"],
+				"Links":["https://courses.edx.org/courses/course-v1:Microsoft+DEV234x+1T2018a/jump_to/block-v1:Microsoft+DEV234x+1T2018a+type@vertical+block@812edbe650c347769a9f7b15d319119b",
+					"https://courses.edx.org/courses/course-v1:Microsoft+DEV234x+1T2018a/jump_to/block-v1:Microsoft+DEV234x+1T2018a+type@vertical+block@4f480b91d7634651be1bd533cb786267"],
+				"Link_type":["video","lecture"]},
+			{"Name":"Timers",
+				"ID":2,
+				"Link_label":["SetTimeout()","SetInterval()","Asynchronous Code using Timers"],
+				"Links":["https://courses.edx.org/courses/course-v1:Microsoft+DEV234x+1T2018a/jump_to/block-v1:Microsoft+DEV234x+1T2018a+type@vertical+block@4aa5dd62130c49a7886224468d4d08f0",
+					"https://courses.edx.org/courses/course-v1:Microsoft+DEV234x+1T2018a/jump_to/block-v1:Microsoft+DEV234x+1T2018a+type@vertical+block@958eedf9fb0a4296a4022d0a7ccf9642",
+					"https://courses.edx.org/courses/course-v1:Microsoft+DEV234x+1T2018a/jump_to/block-v1:Microsoft+DEV234x+1T2018a+type@vertical+block@735c2e51f029435ca56b746737607c5d"],
+				"Link_type":["lecture","lecture","lecture"]}]
+}

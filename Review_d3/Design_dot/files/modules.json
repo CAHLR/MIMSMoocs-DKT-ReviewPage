@@ -1,0 +1,475 @@
+{"Modules": 
+	[{
+	"title": "Module 1 - Asynchronous Fundamentals",
+	"visited":"True",
+	"here":"True",
+	"Section":[{
+		"title":"Intro to Asynchronous Fundamentals",
+		"visited":"True",
+		"here":"False",
+		"Sub-Sections":[{"visited":"True",
+			"here":"False",
+			"title":"Intro to Asynchronous Fundamentals Video"},
+			{"visited":"True",
+			"here":"True",
+			"title":"Intro to Asynchronous Fundamentals"}
+		]
+		},
+	{
+		"title":"Asynchronous Programming Fundamentals",
+		"visited":"Skip",
+		"here":"False",
+		"Sub-Sections":
+			[{"visited":"False",
+				"here":"False",
+			"title":"The Call Stack"},
+			{"visited":"False",
+			"here":"False",
+			"title":"The Event Loop and Queue"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Asynchronous Programming"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Code Demo"}]
+	},
+	{
+		"title":"Callback Functions",
+		"visited":"Skip",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"Skip",
+			"here":"False",
+			"title":"Callback Functions"},
+			{"visited":"Skip",
+			"here":"False",
+			"title":"Examples of methods that use Callback Functions"},
+			{"visited":"Skip",
+			"here":"False",
+			"title":"Chaining Callbacks"},
+			{"visited":"Skip",
+			"here":"False",
+			"title":"Code Demo"}]
+	},
+	{
+		"title":"Timers",
+		"visited":"True",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"True",
+			"here":"False",
+			"title":"SetTimeout()"},
+			{"visited":"True",
+			"here":"False",
+			"title":"SetInterval()"},
+			{"visited":"True",
+			"here":"False",
+			"title":"Asynchronous Code using Timers"},
+			{"visited":"True",
+			"here":"False",
+			"title":"Code Demo"}]
+	},
+	{
+		"title":"DOM Events",
+		"visited":"True",
+		"here":"False",
+		"Sub-Sections":
+			[{"visited":"True",
+			"here":"False",
+			"title":"Types of Events and Event Handlers"},
+			 {"visited":"True",
+			"here":"False",
+			"title":"Handling Click Events"},
+			 {"visited":"True",
+			"here":"False",
+			"title":"Handling Keypress Events"},
+			 {"visited":"True",
+			"here":"False",
+			"title":"Code Demo"}]
+	},
+	{
+		"title":"Module 1 Tutorial Lab: Memory Match",
+		"visited":"True",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"True",
+			"here":"False",
+			"title":"Tutorial 1 Intro Video"},
+			{"visited":"True",
+			"here":"False",
+			"title":"Tutorial 1 Guidelines"},
+			{"visited":"True",
+			"here":"False",
+			"title":"Tutorial Lab: Memory Match"}]
+	},
+	{
+		"title":"Module 1 Assignment: Stop Watch",
+		"visited":"True",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"True",
+			"here":"False",
+			"title":"Assignment 1 Intro Video"},
+			{"visited":"True",
+			"here":"False",
+			"title":"Assignment 1 Introduction"},
+			{"visited":"True",
+			"here":"False",
+			"title":"Assignment 1 Submission Guidelines"}]
+	},
+	{
+		"title":"Module 1 Assessment",
+		"visited":"True",
+		"here":"True",
+		"Sub-Sections":
+		[{"visited":"True",
+			"here":"True",
+			"title":"Module 1 Assessment"}]
+	}
+	]
+	},
+	{
+	"title": "Module 2 - Promises",
+	"visited":"False",
+	"here":"False",
+	"Section":[{
+		"title":"Intro to Promises",
+		"visited":"False",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"False",
+			"here":"False",
+			"title":"Intro to Promises Video"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Intro to Promises"}]
+	},
+	{
+		"title":"Creating and Using Promises",
+		"visited":"False",
+		"here":"False",
+		"Sub-Sections":
+			[{"visited":"False",
+				"here":"False",
+			"title":"Creating Promises"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Using Promises"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Code Demo"}]
+	},
+	{
+		"title":"Chaining Promises",
+		"visited":"False",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"False",
+			"here":"False",
+			"title":"Transformimg Values"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Sequencing Asynchronous Operations"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Promises Chaining vs Callback Pyramids"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Code Demo"}]
+	},
+	{
+		"title":"Handling Multiple Promises",
+		"visited":"False",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"False",
+			"here":"False",
+			"title":"Promise.all()"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Promise.race()"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Code Demo"}]
+	},
+	{
+		"title":"Module 2 Tutorial Lab: Product Catalog",
+		"visited":"False",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"False",
+			"here":"False",
+			"title":"Tutorial 2 Intro Video"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Tutorial 2 Guidelines"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Tutorial Lab: Product Catalog"}]
+	},
+	{
+		"title":"Module 2 Assignment: Advanced Product Catalog",
+		"visited":"False",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"False",
+			"here":"False",
+			"title":"Assignment 2 Intro Video"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Assignment 2 Introduction"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Assignment 2 Submission Guidelines"}]
+	},
+	{
+		"title":"Module 2 Assessment",
+		"visited":"False",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"False",
+			"here":"False",
+			"title":"Module 2 Assessment"}]
+	}
+	]
+	},
+	{
+	"title": "Module 3 - Fetch API",
+	"visited":"False",
+	"here":"False",
+	"Section":[{
+		"title":"Intro to Fetch API",
+		"visited":"False",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"True",
+			"here":"False",
+			"title":"Intro to Fetch Video"},
+			{"visited":"True",
+			"here":"False",
+			"title":"Intro to Fetch"}
+		]
+	},
+	{
+		"title":"Basic Fetch Usage",
+		"visited":"False",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"False",
+			"here":"False",
+			"title":"Basic Fetch Usage"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Handling Fetch Responses"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Code Demo"}]
+	},
+	{
+		"title":"Customizing Fetch Settings",
+		"visited":"False",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"False",
+			"here":"False",
+			"title":"Init Object"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Method and Body Attributes"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Headers and Mode"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Code Demo"}]
+	},
+	{
+		"title":"Using Fetch with Requests",
+		"visited":"False",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"False",
+			"here":"False",
+			"title":"Using Fetch with Requests"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Reusing Requests"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Code Demo"}]
+	},
+	{
+		"title":"Module 3 Tutorial Lab: Text Analytics API",
+		"visited":"False",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"False",
+			"here":"False",
+			"title":"Tutorial 3 Intro Video"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Tutorial 3 Guidelines"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Tutorial Lab: Text Analytics API"},
+			{"visited":"False",
+			"here":"False",
+			"title":"API key FAQ"}]
+	},
+	{
+		"title":"Module 3 Assignment: Face API",
+		"visited":"False",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"False",
+			"here":"False",
+			"title":"Assignment 3 Intro Video"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Assignment 3 Introduction"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Assignment 3 Submission Guidelines"}]
+	},
+	{
+		"title":"Module 3 Assessment",
+		"visited":"False",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"False",
+			"here":"False",
+			"title":"Module 3 Assessment"}]
+	}
+	]
+	},
+	{
+	"title": "Module 4 - Generators",
+	"visited":"False",
+	"here":"False",
+	"Section":[{
+		"title":"Intro to Generators",
+		"visited":"False",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"False",
+			"here":"False",
+			"title":"Intro to Generator Functions Video"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Intro to Generator Functions"}]
+	},
+	{
+		"title":"Generator Functions and Generator Objects",
+		"visited":"False",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"False",
+			"here":"False",
+			"title":"Creating a Generator Function"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Creating and Iterating through a Generator Object"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Throwing Errors Inside a Generator Function"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Yielding to other Generators"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Code Demo"}]
+	},
+	{
+		"title":"More on Generator Objects",
+		"visited":"False",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"False",
+			"here":"False",
+			"title":"Sending Input to Generator Functions"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Other Methods to Iterate"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Return()"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Throwing Errors"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Code Demo"}]
+	},
+	{
+		"title":"Using Generators with Asynchronous Functions",
+		"visited":"False",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"False",
+			"here":"False",
+			"title":"Using Generators with Asynchronous Functions"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Recursive Method to Iterate through Promises"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Code Demo"}]
+	},
+	{
+		"title":"Module 4 Tutorial Lab: Star Wars API",
+		"visited":"False",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"False",
+			"here":"False",
+			"title":"Tutorial 4 Intro Video"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Tutorial 4 Guidelines"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Tutorial Lab: Star Wars API"}]
+	},
+	{
+		"title":"Module 4 Assignment: Starship Comparison",
+		"visited":"False",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"False",
+			"here":"False",
+			"title":"Assignment 4 Intro Video"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Assignment 4 Introduction"},
+			{"visited":"False",
+			"here":"False",
+			"title":"Assignment 4 Submission Guidelines"}]
+	},
+	{
+		"title":"Module 4 Assessment",
+		"visited":"False",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"False",
+			"here":"False",
+			"title":"Module 4 Assessment"}]
+	}
+	]
+	},
+	{
+	"title": "Module 5 - Final Assessment",
+	"visited":"False",
+	"here":"False",
+	"Section":[{
+		"title":"Final Assessment",
+		"visited":"False",
+		"here":"False",
+		"Sub-Sections":
+		[{"visited":"False",
+			"here":"False",
+			"title":"Final Assessment"}]
+	}
+	]
+	}
+	]
+}
