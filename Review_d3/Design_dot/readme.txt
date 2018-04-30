@@ -1,5 +1,5 @@
 To use this:
-1. Change the references for the javascript, csv, json and css files to wherever the file is located. Best to use a https location. Currently it is uploaded to a ucb server and loaded from the server.
+1. Change the references for the javascript, csv, json and css files to wherever the file is located. Best to use a https location. Currently due to cross domain origin, the data and files are loaded in a single html page. When same origin server or server with access to modify header to allow CORS exists then the files can be loaded to that server and accessed through the url.
 2. Open the html page in the browser.
 3. There are 2 javascript files:
 	radial.js - which renders the radial chart, links and skill coverage bar

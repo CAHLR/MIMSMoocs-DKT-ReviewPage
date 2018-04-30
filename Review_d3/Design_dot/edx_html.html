@@ -1,0 +1,1658 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="all" type="text/css">
+  
+ <style>
+.body_1 { }
+svg{
+	display: inline;
+}
+
+.label { 
+  font-family: Arial, sans-serif;
+  font-size: 16px !important;
+  font-weight:bold;
+}
+
+.path,
+.line {
+    fill: none;
+    stroke: black;
+    stroke-width: 2;
+    shape-rendering: crispEdges;
+    opacity:60%;
+    /*margin: 100px 100px auto 100px;*/
+}
+
+.circle{
+	fill:none;
+	color:white;
+}
+
+#radio_button{
+	position: relative;
+	width: 80%;
+    margin: 0 auto;
+    /*align-items: center;*/
+    display: inline-block;
+	text-align: center;
+
+	margin: auto 100px auto 100px;
+}
+
+.course_progress{
+	position:relative;
+	display:inline-block;
+	margin: auto auto auto 30px;
+	 width:100%;
+	  height:80px;
+}
+
+.container_1{
+	position:relative;
+	margin: auto auto auto 30px;
+	 width:100%;
+	  height:420px;
+	  display: inline-block;
+	   float:left;
+	   /*added for collapsible */
+	   padding: 0 18px;
+  /*display: none;*/
+  overflow: hidden;
+  /*background-color: #f1f1f1;*/
+}
+.radial{
+	position: relative;
+	width: 45%;
+	height:260px;
+    margin: auto auto auto 30px;
+    /*vertical-align:top;*/
+    /*align-items: left;*/
+    /*display: inline-block;*/
+	text-align: left;
+	float:left;
+	/*margin: 0px 100px 0px 100px;*/
+}
+
+.link_container{
+    margin: auto auto auto 30px;
+    /*vertical-align:top;*/
+    /*align-items: left;*/
+    /*display: inline-block;*/
+	text-align: left;
+	float:left;
+	/*margin: 0px 100px 0px 100px;*/
+}
+.tab{
+	display:inline-block; 
+      margin-left: 14px;
+    font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+a:link {
+    text-decoration: underline;
+}
+
+a:visited {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.link{
+	position: relative;
+	width: 45%;
+	height:260px;
+    margin: auto auto auto auto;
+    /*vertical-align:top;*/
+    /*align-items: left;*/
+    /*display: inline-block;*/
+	text-align: left;
+	float:left;
+	/*margin: 0px 100px 0px 100px;*/
+}
+
+.g-bar{
+	position: relative;
+	width: 80%;
+    margin: auto auto auto 30px;
+    vertical-align:top;
+    /*align-items: left;*/
+    display: inline-block;
+	text-align: left;
+	float:center;
+}
+#module,#section,#subsection {
+	margin: 0 10px 0 10px;
+}
+
+.radial-progress__text {
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  fill: black;
+  text-anchor:middle;
+}
+.radial-progress__value {
+  fill: #b72667;
+  stroke: black;
+  stroke-width:0;
+}
+.radial-progress__value_best {
+  fill: #b72667;
+  stroke: black;
+  stroke-width:0;
+}
+
+.radial-progress__value_better {
+  fill: orange;
+  stroke: black;
+  stroke-width:0;
+}
+
+.radial-progress__value_good {
+  fill: #f20000;
+  stroke: black;
+  stroke-width:0;
+}
+
+.radial-progress__value_top{
+  fill: #00a0e3;
+  stroke: black;
+  stroke-width:0;
+}
+
+.radial-progress__background {
+  /*fill: #8c8c8c;*/
+  fill:lightgrey;
+  stroke: black;
+  stroke-width:0;
+}
+.progress, .top_progress {
+  padding: 20px;
+  display: inline;
+  width: 25%;
+  height:150px;
+}
+
+.progress_score
+{
+  padding: 20px;
+  display: inline;
+	text-align: center;
+	/*float:center;*/
+  	/*position: relative;*/
+ 	width: 25%;
+	height:20px;
+    /*margin: auto auto auto auto;*/
+}
+ .top_progress_score {
+  padding: 20px;
+  display: inline;
+	text-align: left;
+	/*float:center;*/
+  	/*position: relative;*/
+ 	width: 25%;
+	height:20px;
+    /*margin: auto auto auto 15px;*/
+}
+.message {
+  /*padding: 20px;*/
+  display: inline;
+	text-align: center;
+	float:center;
+  	/*position: relative;*/
+ 	width: 25%;
+	height:20px;
+    /*margin: auto auto auto auto;*/
+}
+
+.tab_avg {
+  display:inline; 
+      margin-left: 0px;
+    font-family: Arial, sans-serif;
+  font-size: 14px;
+	float:center;
+    /*margin: auto auto auto auto;*/
+}
+.tab_best {
+  display:inline; 
+      margin-left: 8px;
+    font-family: Arial, sans-serif;
+  font-size: 14px;
+	color:#b72667;
+	font-weight: bold;
+	float:center;
+    /*margin: auto auto auto auto;*/
+}
+.tab_better {
+	display:inline; 
+      margin-left: 8px;
+    font-family: Arial, sans-serif;
+  font-size: 14px;
+	color:orange;
+	font-weight: bold;
+	float:center;
+    /*margin: auto auto auto auto;*/
+}
+
+.tab_good {
+  /*display:inline; */
+      margin-left: 8px;
+    font-family: Arial, sans-serif;
+  font-size: 14px;
+	color:#f20000;
+	font-weight: bold;
+	float:center;
+    /*margin: auto auto auto auto;*/
+}
+
+
+.legend{
+  height:20;
+	font-family: Arial, sans-serif;
+  font-size: 12px;
+  display: block;
+}
+
+.bar{
+	fill: green;
+}
+.bar_1{
+	/*fill: #8c8c8c;*/
+	fill:lightgrey;
+}
+.fa-check-circle,.fa-circle,.fa-circle-thin{
+  vertical-align: top !important;
+  font-style:normal !important;
+  line-height:normal !important;
+  font-size: 1.8em !important;
+	/*color:green;*/
+	/*text-anchor:middle;*/
+}
+
+.fa-caret-down {
+  vertical-align: top !important;
+  font-style:normal !important;
+  line-height:normal !important;
+  text-align: center !important;
+  font-size: 2em !important;
+  /*color:green;*/
+  /*text-anchor:middle;*/
+}
+
+.help-tip1{
+    position: absolute;
+    top: 0px;
+    left: 350px;
+    text-align: center;
+    font-weight:bold;
+    background-color: white;
+    border:2px solid transparent;
+    border-color:black;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    font-size: 10px;
+    line-height: normal !important;
+    cursor: default;
+    opacity:1;
+}
+
+.help-tip1:before{
+    content:'?';
+    font-weight: bold;
+    color:black;
+/*    line-height: normal !important;*/
+}
+
+.help-tip1:hover p{
+    display:block;
+     background-color: black !important;
+    transform-origin: 100% 0%;
+    font-weight:bold;
+    -webkit-animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+
+}
+
+.help-tip1 p{    /* The tooltip */
+    display: none;
+    font-weight:bold;
+    text-align: left;
+    background-color: #1E2021 !important;
+    padding: 10px;
+    width: 300px;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    right: -4px;
+    color: #FFF !important;
+    font-size: 13px !important;
+    line-height: 1.4;
+}
+
+.help-tip1 p:before{ /* The pointer of the tooltip */
+    position: absolute;
+    content: '';
+    width:0;
+    height: 0;
+    border:6px solid transparent;
+    border-bottom-color:#1E2021 !important;
+    left:10px;
+    top:-12px;
+    font-weight:bold;
+}
+
+.help-tip1 p:after{ /* Prevents the tooltip from being hidden */
+    width:100%;
+    font-weight:bold;
+    height:40px;
+    content:'';
+    position: absolute;
+    top:-40px;
+    left:0;
+}
+
+
+
+/* Style the button that is used to open and close the collapsible content */
+button.collapsible_1 {
+	/*display:inline-block;*/
+    background-color: white !important;
+  background-image: none !important;
+  cursor: pointer;
+  fill:white !important;
+  /*padding: 18px;*/
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  font-weight:bold;
+  font-family: Arial, sans-serif;
+   /*margin:30px 0;*/
+  /*margin-left: 0px;
+  margin-top: 10px;*/
+  margin: auto auto  auto auto;
+}
+
+.tab_head{
+	display:inline-block; 
+      margin-left: 14px;
+    font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,button.collapsible_1:hover{
+  background-color: none !important;
+  background-image: none !important;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content_1{
+ /*padding: 0 px;*/
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+     margin: auto auto auto auto;
+}
+
+.content1 {
+ /*padding: 0 px;*/
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+     margin: auto auto auto auto;
+}
+
+.collapsible_1:after {
+	position:relative;
+	font-family: 'FontAwesome';
+  content: "\f054";
+    /*content: '\f078';  Unicode character for "plus" sign (+) */
+    font-size: 20px;
+    color: black;
+    float: left;
+    margin-left: 0px;
+    color:#0099CD;
+}
+
+ .active:after{
+	/*F078 */
+  content: '\f078';
+  color:#0099CD;
+	font-family: 'FontAwesome';
+    /*content: "\f054";  Unicode character for "minus" sign (-) */
+}
+
+.tooltip_1 {
+    position: absolute;
+    z-index: 10;
+    visibility: hidden;
+    /*background-color: black;*/
+    /*text-align: center;*/
+    padding: 4px;
+    border-radius: 4px;
+    font-weight: bold;
+    /*color: white;*/
+	text-align: left;
+    background-color: #1E2021;
+    padding: 10px;
+    /*width: 300px;*/
+    /*position: relative;*/
+    border-radius: 3px;
+    /*box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);*/
+    /*right: -4px;*/
+    color: #FFF;
+    font-size: 13px;
+    line-height: 1.4;
+
+}
+
+.tooltip_1:after {
+       content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+.here{
+	font-family: Arial, sans-serif;
+	width:120px;
+  height:15px;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	 color:red;
+   display: block;
+
+   /*position: absolute;*/
+/*     padding-left:0px;
+   padding-top:12px;
+     
+  position: relative;*/
+     /*vertical-align: bottom;*/
+    /*margin-bottom:15px;*/
+}
+.legend1{
+	font-size:14px;
+	display:block;
+}
+h3.collap_header{
+  color:black ;
+	font-size:16px !important;
+  font-family: Arial, sans-serif ;
+  align-items: center ;
+text-align: center ;
+}
+h2.skill_header{
+  color:black !important;
+  font-weight:bold !important;
+  font-size:20px !important;
+  font-family: Arial, sans-serif !important;
+}
+
+h2.skill_name{
+  color:black !important;
+  font-weight:bold !important;
+  font-style:italic !important;
+  font-size:18px !important;
+  font-family: Arial, sans-serif !important;
+}
+h3.skill_title{
+  font-weight:bold !important;
+  font-size:15px !important;
+  font-family: Arial, sans-serif !important;
+}
+.module_name{
+position: relative;
+width: 80%;
+margin: 0 auto;
+align-items: center;
+display: block;
+text-align: center;
+
+margin: 0px 100px 0px 100px;
+}
+
+.fa-stack {
+  text-align: center;
+  vertical-align: top !important;
+}
+
+
+
+
+.fa_custom{
+  vertical-align: bottom;
+  display: block;
+/*display: inline-block;*/
+font: normal normal normal 2em/1 FontAwesome;
+    font-size: 2em;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+}
+
+
+   </style>
+</head>
+<body>
+ <script type="text/javascript" src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+  
+ window.onload = function(){
+d3Radial();
+d3progress(true);
+
+  };
+  function d3progress (collapse){
+
+    // Remove the previous canvas
+d3.selectAll('.course_progress svg').remove();
+d3.selectAll('.legend1 svg').remove();
+
+//Get which radio button is selected
+var selection = document.getElementsByName('module');
+var selected_value;
+for(var i = 0; i < selection.length; i++){
+    if(selection[i].checked){
+        selected_value = selection[i].value;
+        document.getElementById("module_name").innerHTML =""
+        break;
+    }
+}
+/* Reference: https://www.w3schools.com/howto/howto_js_collapsible.asp*/
+
+//Collapse/uncollapse the course progress section on click
+if (collapse == true){
+var coll = document.getElementsByClassName("collapsible_1");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+}
+
+
+//Set margin, width and height of svg
+var win_width = window.innerWidth*0.7;
+var margin = {top: 30, right: 20, bottom: 10, left: 10},
+    width = win_width - margin.left - margin.right,
+    height = 150 - margin.top - margin.bottom;
+
+
+// Set the ranges
+var x = d3.time.scale().range([0.25*width, 0.75*width]);
+var y = d3.scale.linear().range([height, 0]);
+
+
+// Define the line
+var valueline = d3.svg.line()
+    .x(function(d) { return x(d.number); })
+    .y(function(d) { return y(d.length); })
+                .interpolate("linear");
+
+
+// Adds the svg canvas
+var svg = d3.select(".course_progress")
+    .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom);
+var course_progress = svg.append("g")
+        .attr("transform", 
+              "translate(" + margin.left + "," + margin.top + ")");
+
+//Add legend for course progress bar
+var svg1 = d3.select(".legend1")
+    .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", 30 + 5 + 5);
+
+var legend = svg1.append("g")
+        .attr("transform", 
+              "translate(" + (margin.left+10) + "," + 5 + ")");
+   
+
+var legend1 = legend.append('svg:foreignObject')
+    .attr("x", 0.35*width)
+    .attr("width", 40)
+    .attr("height", 40)
+    .html('<small><i class="fa fa-check-circle fa-2x"></i></small>')
+    .attr("color",'green');
+
+legend.append("text")
+    .attr("class","legend")
+    .attr("x", 0.35*width+30)
+    .attr("y", 18)
+    .text("Completed");
+
+
+var legend2 = legend.append('svg:foreignObject')
+.attr("x", 0.48*width)
+.attr("width", 40)
+    .attr("height", 40)
+    .html('<small><i class="fa fa-circle fa-2x"></i></small>')
+    .attr("color",'lightgrey');
+
+legend.append("text")
+    .attr("class","legend")
+    .attr("x", 0.48*width+30)
+    .attr("y", 18)
+    .text("Remaining");
+
+var legend3 = legend.append('svg:foreignObject')
+.attr("x", 0.6*width)
+.attr("width", 40)
+    .attr("height", 40)
+    .html('<small><i class="fa fa-circle-thin fa-2x"></i></small>')
+    .attr("color",'black');
+
+legend.append("text")
+    .attr("class","legend")
+    .attr("x", 0.6*width+30)
+    .attr("y", 18)
+    .text("Skipped");
+
+//Read the file and depending on which radio button is selected populate the values.
+//Index with [] refers to the module/section number
+var course_name,module_name,section_name;
+
+
+modules = {"Modules": 
+  [{
+  "title": "Module 1 - Asynchronous Fundamentals",
+  "visited":"True",
+  "here":"True",
+  "Section":[{
+    "title":"Intro to Asynchronous Fundamentals",
+    "visited":"True",
+    "here":"False",
+    "Sub-Sections":[{"visited":"True",
+      "here":"False",
+      "title":"Intro to Asynchronous Fundamentals Video"},
+      {"visited":"True",
+      "here":"True",
+      "title":"Intro to Asynchronous Fundamentals"}
+    ]
+    },
+  {
+    "title":"Asynchronous Programming Fundamentals",
+    "visited":"Skip",
+    "here":"False",
+    "Sub-Sections":
+      [{"visited":"False",
+        "here":"False",
+      "title":"The Call Stack"},
+      {"visited":"False",
+      "here":"False",
+      "title":"The Event Loop and Queue"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Asynchronous Programming"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Code Demo"}]
+  },
+  {
+    "title":"Callback Functions",
+    "visited":"Skip",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"Skip",
+      "here":"False",
+      "title":"Callback Functions"},
+      {"visited":"Skip",
+      "here":"False",
+      "title":"Examples of methods that use Callback Functions"},
+      {"visited":"Skip",
+      "here":"False",
+      "title":"Chaining Callbacks"},
+      {"visited":"Skip",
+      "here":"False",
+      "title":"Code Demo"}]
+  },
+  {
+    "title":"Timers",
+    "visited":"True",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"True",
+      "here":"False",
+      "title":"SetTimeout()"},
+      {"visited":"True",
+      "here":"False",
+      "title":"SetInterval()"},
+      {"visited":"True",
+      "here":"False",
+      "title":"Asynchronous Code using Timers"},
+      {"visited":"True",
+      "here":"False",
+      "title":"Code Demo"}]
+  },
+  {
+    "title":"DOM Events",
+    "visited":"True",
+    "here":"False",
+    "Sub-Sections":
+      [{"visited":"True",
+      "here":"False",
+      "title":"Types of Events and Event Handlers"},
+       {"visited":"True",
+      "here":"False",
+      "title":"Handling Click Events"},
+       {"visited":"True",
+      "here":"False",
+      "title":"Handling Keypress Events"},
+       {"visited":"True",
+      "here":"False",
+      "title":"Code Demo"}]
+  },
+  {
+    "title":"Module 1 Tutorial Lab: Memory Match",
+    "visited":"True",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"True",
+      "here":"False",
+      "title":"Tutorial 1 Intro Video"},
+      {"visited":"True",
+      "here":"False",
+      "title":"Tutorial 1 Guidelines"},
+      {"visited":"True",
+      "here":"False",
+      "title":"Tutorial Lab: Memory Match"}]
+  },
+  {
+    "title":"Module 1 Assignment: Stop Watch",
+    "visited":"True",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"True",
+      "here":"False",
+      "title":"Assignment 1 Intro Video"},
+      {"visited":"True",
+      "here":"False",
+      "title":"Assignment 1 Introduction"},
+      {"visited":"True",
+      "here":"False",
+      "title":"Assignment 1 Submission Guidelines"}]
+  },
+  {
+    "title":"Module 1 Assessment",
+    "visited":"True",
+    "here":"True",
+    "Sub-Sections":
+    [{"visited":"True",
+      "here":"True",
+      "title":"Module 1 Assessment"}]
+  }
+  ]
+  },
+  {
+  "title": "Module 2 - Promises",
+  "visited":"False",
+  "here":"False",
+  "Section":[{
+    "title":"Intro to Promises",
+    "visited":"False",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"False",
+      "here":"False",
+      "title":"Intro to Promises Video"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Intro to Promises"}]
+  },
+  {
+    "title":"Creating and Using Promises",
+    "visited":"False",
+    "here":"False",
+    "Sub-Sections":
+      [{"visited":"False",
+        "here":"False",
+      "title":"Creating Promises"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Using Promises"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Code Demo"}]
+  },
+  {
+    "title":"Chaining Promises",
+    "visited":"False",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"False",
+      "here":"False",
+      "title":"Transformimg Values"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Sequencing Asynchronous Operations"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Promises Chaining vs Callback Pyramids"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Code Demo"}]
+  },
+  {
+    "title":"Handling Multiple Promises",
+    "visited":"False",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"False",
+      "here":"False",
+      "title":"Promise.all()"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Promise.race()"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Code Demo"}]
+  },
+  {
+    "title":"Module 2 Tutorial Lab: Product Catalog",
+    "visited":"False",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"False",
+      "here":"False",
+      "title":"Tutorial 2 Intro Video"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Tutorial 2 Guidelines"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Tutorial Lab: Product Catalog"}]
+  },
+  {
+    "title":"Module 2 Assignment: Advanced Product Catalog",
+    "visited":"False",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"False",
+      "here":"False",
+      "title":"Assignment 2 Intro Video"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Assignment 2 Introduction"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Assignment 2 Submission Guidelines"}]
+  },
+  {
+    "title":"Module 2 Assessment",
+    "visited":"False",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"False",
+      "here":"False",
+      "title":"Module 2 Assessment"}]
+  }
+  ]
+  },
+  {
+  "title": "Module 3 - Fetch API",
+  "visited":"False",
+  "here":"False",
+  "Section":[{
+    "title":"Intro to Fetch API",
+    "visited":"False",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"True",
+      "here":"False",
+      "title":"Intro to Fetch Video"},
+      {"visited":"True",
+      "here":"False",
+      "title":"Intro to Fetch"}
+    ]
+  },
+  {
+    "title":"Basic Fetch Usage",
+    "visited":"False",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"False",
+      "here":"False",
+      "title":"Basic Fetch Usage"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Handling Fetch Responses"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Code Demo"}]
+  },
+  {
+    "title":"Customizing Fetch Settings",
+    "visited":"False",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"False",
+      "here":"False",
+      "title":"Init Object"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Method and Body Attributes"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Headers and Mode"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Code Demo"}]
+  },
+  {
+    "title":"Using Fetch with Requests",
+    "visited":"False",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"False",
+      "here":"False",
+      "title":"Using Fetch with Requests"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Reusing Requests"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Code Demo"}]
+  },
+  {
+    "title":"Module 3 Tutorial Lab: Text Analytics API",
+    "visited":"False",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"False",
+      "here":"False",
+      "title":"Tutorial 3 Intro Video"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Tutorial 3 Guidelines"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Tutorial Lab: Text Analytics API"},
+      {"visited":"False",
+      "here":"False",
+      "title":"API key FAQ"}]
+  },
+  {
+    "title":"Module 3 Assignment: Face API",
+    "visited":"False",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"False",
+      "here":"False",
+      "title":"Assignment 3 Intro Video"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Assignment 3 Introduction"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Assignment 3 Submission Guidelines"}]
+  },
+  {
+    "title":"Module 3 Assessment",
+    "visited":"False",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"False",
+      "here":"False",
+      "title":"Module 3 Assessment"}]
+  }
+  ]
+  },
+  {
+  "title": "Module 4 - Generators",
+  "visited":"False",
+  "here":"False",
+  "Section":[{
+    "title":"Intro to Generators",
+    "visited":"False",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"False",
+      "here":"False",
+      "title":"Intro to Generator Functions Video"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Intro to Generator Functions"}]
+  },
+  {
+    "title":"Generator Functions and Generator Objects",
+    "visited":"False",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"False",
+      "here":"False",
+      "title":"Creating a Generator Function"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Creating and Iterating through a Generator Object"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Throwing Errors Inside a Generator Function"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Yielding to other Generators"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Code Demo"}]
+  },
+  {
+    "title":"More on Generator Objects",
+    "visited":"False",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"False",
+      "here":"False",
+      "title":"Sending Input to Generator Functions"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Other Methods to Iterate"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Return()"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Throwing Errors"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Code Demo"}]
+  },
+  {
+    "title":"Using Generators with Asynchronous Functions",
+    "visited":"False",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"False",
+      "here":"False",
+      "title":"Using Generators with Asynchronous Functions"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Recursive Method to Iterate through Promises"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Code Demo"}]
+  },
+  {
+    "title":"Module 4 Tutorial Lab: Star Wars API",
+    "visited":"False",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"False",
+      "here":"False",
+      "title":"Tutorial 4 Intro Video"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Tutorial 4 Guidelines"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Tutorial Lab: Star Wars API"}]
+  },
+  {
+    "title":"Module 4 Assignment: Starship Comparison",
+    "visited":"False",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"False",
+      "here":"False",
+      "title":"Assignment 4 Intro Video"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Assignment 4 Introduction"},
+      {"visited":"False",
+      "here":"False",
+      "title":"Assignment 4 Submission Guidelines"}]
+  },
+  {
+    "title":"Module 4 Assessment",
+    "visited":"False",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"False",
+      "here":"False",
+      "title":"Module 4 Assessment"}]
+  }
+  ]
+  },
+  {
+  "title": "Module 5 - Final Assessment",
+  "visited":"False",
+  "here":"False",
+  "Section":[{
+    "title":"Final Assessment",
+    "visited":"False",
+    "here":"False",
+    "Sub-Sections":
+    [{"visited":"False",
+      "here":"False",
+      "title":"Final Assessment"}]
+  }
+  ]
+  }
+  ]
+}
+ // d3.json("https://people.ischool.berkeley.edu/~niavivek/Design_dot/modules.json",function(error, json_data) {
+   json_data = modules;
+    var json_data = json_data['Modules'];
+    if (selected_value == "module"){
+      
+      data = json_data;
+//Module view
+       data.forEach(function(d, i) {
+        if (d['here'] == "True"){
+            course_name = "Asynchronous Programming with Javascript";
+            module_name = json_data[0]['title'];
+            section_name = json_data[0]['Section'][7]['title'];
+        }
+        d.number = i+1;
+        d.fill = d['visited'];
+
+        if (i == 0){
+            d.length = 2;
+        }
+        else{
+        d.length = +2;
+    }
+});
+   }
+
+// // Section View
+else if (selected_value == "section"){
+        data = json_data[0]['Section'];
+       data.forEach(function(d, i) {
+        if (d['here'] == "True"){
+            course_name = "Asynchronous Programming with Javascript";
+            module_name = json_data[0]['title'];
+            section_name = json_data[0]['Section'][7]['title'];
+        }
+        
+        d.number = i+1;
+        d.fill = d['visited'];
+        if (i == 0){
+            d.length = 2;
+        }
+        else{
+        d.length = +2;
+    }
+});
+   }
+   else{
+
+// //Sub-Section View
+        var data = json_data[0]['Section'][7]['Sub-Sections'];
+       data.forEach(function(d, i) {
+        if (d['here'] == "True"){
+            course_name = "Asynchronous Programming with Javascript";
+            module_name = json_data[0]['title'];
+            section_name = json_data[0]['Section'][7]['title'];
+        }
+        d.number = i+1;
+        
+        d.fill = d['visited'];
+        if (i == 0){
+            d.length = 2;
+        }
+        else{
+        d.length = +2;
+    }
+});
+}
+
+//Shorten the bar lengths if the number of modules/sections are 1/2/3
+if (data.length == 1){
+    // Set the ranges
+x = d3.time.scale().range([0.5*width, 0.5*width]);
+y = d3.scale.linear().range([height, 0]);
+}
+
+if (data.length == 2){
+    // Set the ranges
+x = d3.time.scale().range([0.42*width, 0.55*width]);
+y = d3.scale.linear().range([height, 0]);
+}
+
+if (data.length == 3){
+    // Set the ranges
+x = d3.time.scale().range([0.38*width, 0.6*width]);
+y = d3.scale.linear().range([height, 0]);
+}
+
+change_name();
+//Function to change course/module/section name based on radio button selection
+function change_name(){
+if (selected_value == "module"){
+document.getElementById("module_name").innerHTML += "<h3 class=\"collap_header\">Course: "+course_name+"</h3>";
+}
+else if (selected_value == "section"){
+document.getElementById("module_name").innerHTML += "<h3 class=\"collap_header\">Module Name: "+module_name+"</h3>";
+}
+else{
+document.getElementById("module_name").innerHTML += "<h3 class=\"collap_header\">Section Name: "+section_name+"</h3>";
+}
+};
+
+//Add tooltip for the course progress bar
+var tooltip = d3.select("body")
+  .append("div")
+  .attr('class', 'tooltip_1');
+
+    x.domain(d3.extent(data, function(d) { return d.number; }));
+    y.domain([0, d3.max(data, function(d) { return d.length; })]);
+
+     course_progress.append("path")
+     .attr("transform", 
+              "translate(" + margin.left + "," + (margin.top+20) + ")")
+        .attr("class", "line")
+        .attr("d", valueline(data));
+
+    course_progress.selectAll("dot")
+        .data(data)
+      .enter().append("circle")
+      .attr("transform", 
+              "translate(" + margin.left + "," + (margin.top+20) + ")")
+        .attr("r", 10)
+        .attr("fill","white")
+         .attr("cx", function(d) { return x(d.number); })
+        .attr("cy", function(d) { return y(d.length); });
+        
+
+
+//Add the course progress bar
+course_progress.selectAll("dot")
+        .data(data)
+      .enter().append('svg:foreignObject')
+      .attr("transform", 
+              "translate(" + margin.left + "," + (margin.top+20) + ")")
+    .attr("width", 120)
+    .attr("height", 120)
+    .html(function(d) {
+        if (d['visited'] == "True") return'<small><i class="fa fa-check-circle fa-2x" style="color:green"></i></small>';
+         else if (d['visited'] == "False") return '<small><i class="fa fa-circle fa-2x" style="color:lightgrey"></i></small>';
+          else return '<small><i class="fa fa-circle-thin fa-2x" style="color:black"></i></small>';})
+    // .attr("color",function(d) {if (d['visited'] == "True") return 'green'; else if (d['visited'] == "False") return 'lightgrey'; else return 'black'})
+    .attr("x", function(d) { return x(d.number)-10; })
+    .attr("y", function(d) { return y(d.length)-12; })
+    .on("mouseover", function(d) {
+    return tooltip.style("visibility", "visible").text(d['title']);
+  })
+  .on("mousemove", function() {
+    return tooltip.style("top", (d3.event.pageY + 30) + "px")
+      .style("left", (d3.event.pageX - 50) + "px");
+  })
+  
+  .on("mouseout", function() {
+    return tooltip.style("visibility", "hidden");
+  });
+
+
+//Add the you are here arrow and text
+  course_progress.selectAll("dot")
+        .data(data)
+      .enter().append('foreignObject')
+      .attr("transform", 
+              "translate(" + (margin.left-60) + "," + (margin.top-15) + ")")
+    .attr("width", 120)
+    .attr("height", 120)
+     .html(function(d) {
+        //if (d['here'] == "True") return '<span class="fa-stack fa-3x"><i class="fa fa-caret-down fa-1x"><span class="fa fa-stack-1x" style="color:black;"><span class="here">You are here</span></span></i></span>';
+         if (d['here'] == "True") return '<div class=\"stack\"><span class=\"here\">You are here</span><i class=\"fa_custom fa-caret-down fa-2x\"></i></div>';
+         else return '';})
+    .attr("color",function(d) {if (d['here'] == "True") return 'black'; else return 'white';})
+    .attr("x", function(d) { return x(d.number); })
+    .attr("y", function(d) { return y(d.length); })
+    .on("mouseover", function(d) {
+    return tooltip.style("visibility", "visible")
+    .text(d['title']);
+  })
+  
+  .on("mousemove", function() {
+    return tooltip.style("top", (d3.event.pageY + 30) + "px")
+      .style("left", (d3.event.pageX - 50) + "px");
+  })
+  
+  .on("mouseout", function() {
+    return tooltip.style("visibility", "hidden");
+  });
+
+
+};
+  function d3Radial () {
+/* References: 
+ https://codepen.io/shellbryson/pen/KzaKLe */
+
+//Read the file
+
+var data = [1,2];
+var skill = [1,2];
+var score = [70,50];
+var top_score=[65,70];
+var covered = [80,60];
+  
+    data.forEach(function(d, i) {
+        
+        d.skill = +skill[i];
+        d.score = parseFloat(+score[i]);
+        d.topscore= parseFloat(+top_score[i]);
+        d.covered=parseFloat(+covered[i]);
+    });
+    //Read the file containing the links for suggested resources
+ data1 = {"Skills":[{"Name":"Fundamentals",
+        "ID":1,
+        "Link_label":["Intro to Asynchronous Fundamentals Video","Intro to Asynchronous Fundamentals"],
+        "Links":["https://courses.edx.org/courses/course-v1:Microsoft+DEV234x+1T2018a/jump_to/block-v1:Microsoft+DEV234x+1T2018a+type@vertical+block@812edbe650c347769a9f7b15d319119b",
+          "https://courses.edx.org/courses/course-v1:Microsoft+DEV234x+1T2018a/jump_to/block-v1:Microsoft+DEV234x+1T2018a+type@vertical+block@4f480b91d7634651be1bd533cb786267"],
+        "Link_type":["video","lecture"]},
+      {"Name":"Timers",
+        "ID":2,
+        "Link_label":["SetTimeout()","SetInterval()","Asynchronous Code using Timers"],
+        "Links":["https://courses.edx.org/courses/course-v1:Microsoft+DEV234x+1T2018a/jump_to/block-v1:Microsoft+DEV234x+1T2018a+type@vertical+block@4aa5dd62130c49a7886224468d4d08f0",
+          "https://courses.edx.org/courses/course-v1:Microsoft+DEV234x+1T2018a/jump_to/block-v1:Microsoft+DEV234x+1T2018a+type@vertical+block@958eedf9fb0a4296a4022d0a7ccf9642",
+          "https://courses.edx.org/courses/course-v1:Microsoft+DEV234x+1T2018a/jump_to/block-v1:Microsoft+DEV234x+1T2018a+type@vertical+block@735c2e51f029435ca56b746737607c5d"],
+        "Link_type":["lecture","lecture","lecture"]}]
+};
+      var json_data = data1['Skills'];
+ 
+
+var end = [];
+var end1 = [];
+var ind = [];
+var start = [];
+var count = [];
+var count1 = [];
+var progress = [];
+var top_progress = [];
+var step = [];
+var step1 = [];
+
+
+data.forEach(function(d, i) {  
+
+end =score[i];
+end1 = top_score[i];
+ind = i+1;
+start[i] = 0;
+count[i] = end;
+count1[i] = end1;
+progress[i] = start[i];
+top_progress[i] = start[i];
+step[i] = end[i] < start[i] ? -0.01 : 0.01;
+step1[i] = end1[i] < start[i] ? -0.01 : 0.01;
+var skill_name = "";
+var k;
+var skill_ind;
+
+for (k=0,len = json_data.length;k<len;k++){
+  if (json_data[k]['ID'] == skill[i]){
+      skill_name = json_data[k]['Name'];
+      skill_ind = k;
+  }
+}
+
+
+//Add the radial, link and horizontal bar dynamically depending on the number of skills
+
+document.getElementById("skill").innerHTML += "<div class=\"container_1\" id=\"container"+ind+"\"></div>";
+document.getElementById("container"+ind).innerHTML += "<h2 class=\"skill_name\">"+skill_name+":</h2>";
+document.getElementById("container"+ind).innerHTML += "<div class=\"radial\" id=\"radial"+ind+"\"></div>";
+document.getElementById("container"+ind).innerHTML += "<div class=\"link\" id=\"link"+ind+"\"></div>";
+document.getElementById("container"+ind).innerHTML += "<div class=\"g-bar\" id=\"g-bar"+ind+"\"></div>";
+document.getElementById("radial"+ind).innerHTML += "<h3 class=\"skill_title\">Mastery Level:</h3><div class=\"help-tip1\"><p>This is your skill level based on your performance and behavior in the course.</p></div></br></br>";
+document.getElementById("link"+ind).innerHTML += "<h3 class=\"skill_title\">Suggested Resources to Improve Mastery Level:<h3></br>";
+document.getElementById("link"+ind).innerHTML += "<div class=\"link_container\" id=\"link_container"+ind+"\"></div>";
+document.getElementById("radial"+ind).innerHTML += "<div class=\"progress\" id=\"progress"+ind+"\"></div>";
+document.getElementById("radial"+ind).innerHTML += "<div class=\"top_progress\" id=\"top_progress"+ind+"\"></div>";
+document.getElementById("radial"+ind).innerHTML += "</br><div class=\"progress_score\" id=\"progress_score"+ind+"\"></div>";
+
+document.getElementById("radial"+ind).innerHTML += "<div class=\"top_progress_score\" id=\"top_progress_score"+ind+"\"></div>";
+document.getElementById("radial"+ind).innerHTML += "</br></br><div class=\"message\" id=\"message"+ind+"\"></div>";
+document.getElementById("progress_score"+ind).innerHTML += "<span class=\"tab\">Your Score</span>";
+
+document.getElementById("top_progress_score"+ind).innerHTML += "<span class=\"tab_avg\">Average Performer Score</span>";
+document.getElementById("g-bar"+ind).innerHTML += "<h3 class=\"skill_title\">Skill Resources Covered:</h3><div class=\"help-tip1\"><p>This bar tells you how much of the course material you have covered.</p></div>";
+
+//Encouraging messages for the students depending on their score
+if (score[i] >= 70){
+document.getElementById("message"+ind).innerHTML += "<span class=\"tab_best\">Way to go!!! You are among the best.</span>";
+}
+else if (score[i] >= 40){
+document.getElementById("message"+ind).innerHTML += "<span class=\"tab_better\">Great!! You are right there with others.</span>";
+}
+else{
+document.getElementById("message"+ind).innerHTML += "<span class=\"tab_good\">Keep going. You are doing a good job!</span>";
+}
+
+//Displays the links
+for (var l=0;l<json_data[skill_ind]['Link_label'].length;l++){
+  if (json_data[skill_ind]['Link_type'][l] == "lecture"){
+  document.getElementById("link_container"+ind).innerHTML += "<div class=\"icon-display\"><span class=\"icon fa fa-book\" aria-hidden=\"true\"></span>"
+  +"<span class=\"tab\"><a href=\""+json_data[skill_ind]['Links'][l]+"\">"+json_data[skill_ind]['Link_label'][l]+"</a></span></div></br></br>";
+  }
+  else
+    {
+      document.getElementById("link_container"+ind).innerHTML += "<div class=\"icon-display\"><span class=\"icon fa fa-play\" aria-hidden=\"true\"></span>"
++"<span class=\"tab\"><a href=\""+json_data[skill_ind]['Links'][l]+"\">"+json_data[skill_ind]['Link_label'][l]+"</a></span></div></br></br>";
+  }
+
+}
+
+
+//Add the horizontal bar
+var margin = {
+    top: 15,
+    right: 15,
+    bottom: 15,
+    left: 10
+};
+var win_width = window.innerWidth*0.8;
+var width = win_width - margin.left - margin.right,
+    height = 45 - margin.top - margin.bottom;
+//% of window with bar
+var f = 0.3;
+
+var svg = d3.select("#g-bar"+ind).append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    
+    var bars1 = svg.append("rect")
+    .attr("class", "bar_1")
+    .attr("height", 10)
+    .attr("width", f*width)
+    .attr('x', 0)
+    .attr('y', 0);
+
+  var w = covered[i];
+   var bars = svg.append("rect")
+    .attr("class", "bar")
+    .attr("height", 10)
+    .attr("width", w*f*width/100)
+    .attr('x', 0)
+    .attr('y', 0);
+ 
+//Add legend for the horizontal bar  
+
+var legend1 = svg.append("rect")
+    .attr("x", (f+0.03)*width)
+    .attr("width", 10)
+    .attr("height", 10)
+    .style("fill", 'green');
+
+svg.append("text")
+    .attr("class","legend")
+    .attr("x", (f+0.043)*width)
+    .attr("y", 0)
+    .text(covered[i] +"% Skill resources");
+
+svg.append("text")
+    .attr("class","legend")
+    .attr("x", (f+0.043)*width)
+    .attr("y", 12)
+    .text("\t viewed/attempted");
+
+var legend2 = svg.append("rect")
+    .attr("x", (f+0.23)*width)
+    .attr("width", 10)
+    .attr("height", 10)
+    .style("fill", 'lightgrey');
+
+svg.append("text")
+    .attr("class","legend")
+    .attr("x", (f+0.245)*width)
+    .attr("y", 0)
+    .text((100-covered[i]) + "% Skill resources");
+
+svg.append("text")
+    .attr("class","legend")
+    .attr("x", (f+0.245)*width)
+    .attr("y", 12)
+    .text("\t not viewed/attempted");
+
+//Add the radial chart
+var wrapper = document.getElementById("progress"+ind);
+var wrapper1 = document.getElementById("top_progress"+ind);
+
+
+var radius = 50;
+var border = 10;
+var strokeSpacing = 0;
+var endAngle = Math.PI * 2;
+var formatText = d3.format(".0f");
+var boxSize = radius * 2;
+
+//Define the circle
+var circle = d3.svg.arc()
+  .startAngle(0)
+  .innerRadius(radius)
+  .outerRadius(radius - border);
+
+//setup SVG wrapper
+var svg = d3.select(wrapper)
+  .append('svg')
+  .attr('width', boxSize)
+  .attr('height', boxSize);
+
+// ADD Group container
+var g = svg.append('g')
+  .attr('transform', 'translate(' + boxSize / 2 + ',' + boxSize / 2 + ')');
+
+//Setup track
+var track = g.append('g').attr('class', 'radial-progress');
+track.append('path')
+  .attr('class', 'radial-progress__background')
+  .attr('d', circle.endAngle(endAngle));
+
+//Set color of radial chart depending on the score of the student
+if (score[i] >= 70){
+var value = track.append('path').attr('class', 'radial-progress__value_best').attr('d', circle.endAngle(endAngle * count[i]/100));;
+}
+else if (score[i] >= 40){
+var value = track.append('path').attr('class', 'radial-progress__value_better').attr('d', circle.endAngle(endAngle * count[i]/100));;
+}
+else{
+var value = track.append('path').attr('class', 'radial-progress__value_good').attr('d', circle.endAngle(endAngle * count[i]/100));;
+}
+// var value = track.append('path').attr('class', 'radial-progress__value').attr('d', circle.endAngle(endAngle * count[i]/100));;
+
+//Add text value
+var numberText = track.append('text')
+  .attr('class', 'radial-progress__text')
+  .attr('x', '0%')
+  .attr('y', '0%')
+  .attr('dy', '6px')
+  .text(formatText(count[i]));;
+
+//Add the radial chart for the top performer
+//Define the circle
+var circle1 = d3.svg.arc()
+  .startAngle(0)
+  .innerRadius(radius)
+  .outerRadius(radius - border);
+
+//setup SVG wrapper
+var svg1 = d3.select(wrapper1)
+  .append('svg')
+  .attr('width', boxSize)
+  .attr('height', boxSize);
+
+// ADD Group container
+var g1 = svg1.append('g')
+  .attr('transform', 'translate(' + boxSize / 2 + ',' + boxSize / 2 + ')');
+
+//Setup track
+var track1 = g1.append('g').attr('class', 'radial-progress');
+track1.append('path')
+  .attr('class', 'radial-progress__background')
+  .attr('d', circle1.endAngle(endAngle));
+
+//Add colour fill
+var value1 = track1.append('path').attr('class', 'radial-progress__value_top').attr('d', circle1.endAngle(endAngle * count1[i]/100));
+//Add text value
+var numberText1 = track1.append('text')
+  .attr('class', 'radial-progress__text')
+  .attr('x', '0%')
+  .attr('y', '0%')
+  .attr('dy', '6px')
+  .text(formatText(count1[i]));;
+
+
+});
+
+};
+  
+  
+  </script>
+<div class="body_1">
+<div id="overall_progress">
+	<button class="collapsible_1" id="collapsible_1"><span class="tab_head">Course Progress Bar:</span></button>
+	<div class="content_1">
+	<div class="module_name" id="module_name"></div>
+  <div id="radio_button">
+    <input type="radio" id="module"
+     name="module" value="module" checked="checked" onclick="d3progress(false);">
+    <label for="module">Module view</label>
+
+    <input type="radio" id="section"
+     name="module" value="section" onclick="d3progress(false);">
+    <label for="section">Section view</label>
+
+    <input type="radio" id="subsection"
+     name="module" value="subsection" onclick="d3progress(false);">
+    <label for="subsection">Sub-section view</label>
+  </div><br><br>
+  <div class="course_progress"></div>
+  <div class="legend1"></div>
+</div>
+</div>
+
+<div id="skill">
+	<h2 class="skill_header">Skills:</h2>
+
+</div>
+</div>
+</body>

@@ -3,8 +3,24 @@ function d3Radial () {
  https://codepen.io/shellbryson/pen/KzaKLe */
 
 //Read the file
+
+// var xmlhttp1 = new XMLHttpRequest();
+// var url1 = "https://people.ischool.berkeley.edu/~niavivek/Design_dot/percent.csv";
+
+// xmlhttp1.onreadystatechange = function() {
+//     if (this.readyState == 4 && this.status == 200) {
+//         var myArr = d3.csv(this.responseText);
+//         parse_percent(myArr);
+//     }
+// };
+// xmlhttp1.open("GET", url1, true);
+// xmlhttp1.send();
+
 d3.csv("https://people.ischool.berkeley.edu/~niavivek/Design_dot/percent.csv", function(error, data) {
-  
+// function parse_percent(data) {  
+//$.getJSON("https://people.ischool.berkeley.edu/~niavivek/Design_dot/skill_link.json", function(data) {
+    // console.log(data);
+
     data.forEach(function(d) {
         
         d.skill = +d.skill;
@@ -13,7 +29,21 @@ d3.csv("https://people.ischool.berkeley.edu/~niavivek/Design_dot/percent.csv", f
         d.covered=parseFloat(+d.covered);
     });
     //Read the file containing the links for suggested resources
-  d3.json("https://people.ischool.berkeley.edu/~niavivek/Design_dot/skill_link.json",function(error1, data1) {
+// var xmlhttp = new XMLHttpRequest();
+// var url = "https://people.ischool.berkeley.edu/~niavivek/Design_dot/skill_link.json";
+
+// xmlhttp.onreadystatechange = function() {
+//     if (this.readyState == 4 && this.status == 200) {
+//         var myArr = JSON.parse(this.responseText);
+//         parse_skill_link(myArr);
+//     }
+// };
+// xmlhttp.open("GET", url, true);
+// xmlhttp.send();
+
+// function parse_skill_link(data1) {
+
+d3.json("https://people.ischool.berkeley.edu/~niavivek/Design_dot/skill_link.json", function(error, data1) {
       var json_data = data1['Skills'];
  
 
@@ -55,13 +85,13 @@ for (k=0,len = json_data.length;k<len;k++){
 
 //Add the radial, link and horizontal bar dynamically depending on the number of skills
 
-document.getElementById("skill").innerHTML += "<div class=\"container\" id=\"container"+ind+"\"></div>";
+document.getElementById("skill").innerHTML += "<div class=\"container_1\" id=\"container"+ind+"\"></div>";
 document.getElementById("container"+ind).innerHTML += "<h2 class=\"skill_name\">"+skill_name+":</h2>";
 document.getElementById("container"+ind).innerHTML += "<div class=\"radial\" id=\"radial"+ind+"\"></div>";
 document.getElementById("container"+ind).innerHTML += "<div class=\"link\" id=\"link"+ind+"\"></div>";
 document.getElementById("container"+ind).innerHTML += "<div class=\"g-bar\" id=\"g-bar"+ind+"\"></div>";
-document.getElementById("radial"+ind).innerHTML += "<h3>Mastery Level:</h3><div class=\"help-tip\"><p>This is your skill level based on your performance and behavior in the course.</p></div></br></br>";
-document.getElementById("link"+ind).innerHTML += "<h3>Suggested Resources to Improve Mastery Level:<h3></br>";
+document.getElementById("radial"+ind).innerHTML += "<h3 class=\"skill_title\">Mastery Level:</h3><div class=\"help-tip1\"><p>This is your skill level based on your performance and behavior in the course.</p></div></br></br>";
+document.getElementById("link"+ind).innerHTML += "<h3 class=\"skill_title\">Suggested Resources to Improve Mastery Level:<h3></br>";
 document.getElementById("link"+ind).innerHTML += "<div class=\"link_container\" id=\"link_container"+ind+"\"></div>";
 document.getElementById("radial"+ind).innerHTML += "<div class=\"progress\" id=\"progress"+ind+"\"></div>";
 document.getElementById("radial"+ind).innerHTML += "<div class=\"top_progress\" id=\"top_progress"+ind+"\"></div>";
@@ -72,8 +102,7 @@ document.getElementById("radial"+ind).innerHTML += "</br></br><div class=\"messa
 document.getElementById("progress_score"+ind).innerHTML += "<span class=\"tab\">Your Score</span>";
 
 document.getElementById("top_progress_score"+ind).innerHTML += "<span class=\"tab_avg\">Average Performer Score</span>";
-document.getElementById("g-bar"+ind).innerHTML += "<h3>Skill Resources Covered:</h3><div class=\"help-tip\"><p>This bar tells you how much of the course material you have covered.</p></div>";
-
+document.getElementById("g-bar"+ind).innerHTML += "<h3 class=\"skill_title\">Skill Resources Covered:</h3><div class=\"help-tip1\"><p>This bar tells you how much of the course material you have covered.</p></div>";
 //Encouraging messages for the students depending on their score
 if (d.score >= 70){
 document.getElementById("message"+ind).innerHTML += "<span class=\"tab_best\">Way to go!!! You are among the best.</span>";
@@ -107,7 +136,7 @@ var margin = {
     bottom: 15,
     left: 20
 };
-var win_width = window.innerWidth*0.9;
+var win_width = window.innerWidth*0.8;
 var width = win_width - margin.left - margin.right,
     height = 45 - margin.top - margin.bottom;
 //% of window with bar

@@ -19,7 +19,7 @@ for(var i = 0; i < selection.length; i++){
 
 //Collapse/uncollapse the course progress section on click
 if (collapse == true){
-var coll = document.getElementsByClassName("collapsible");
+var coll = document.getElementsByClassName("collapsible_1");
 var i;
 
 for (i = 0; i < coll.length; i++) {
@@ -38,14 +38,14 @@ for (i = 0; i < coll.length; i++) {
 
 
 //Set margin, width and height of svg
-var win_width = window.innerWidth*0.9;
-var margin = {top: 30, right: 20, bottom: 10, left: 20},
+var win_width = window.innerWidth*0.7;
+var margin = {top: 30, right: 20, bottom: 10, left: 10},
     width = win_width - margin.left - margin.right,
     height = 150 - margin.top - margin.bottom;
 
 
 // Set the ranges
-var x = d3.time.scale().range([0.3*width, 0.7*width]);
+var x = d3.time.scale().range([0.25*width, 0.75*width]);
 var y = d3.scale.linear().range([height, 0]);
 
 
@@ -120,7 +120,8 @@ legend.append("text")
 //Index with [] refers to the module/section number
 var course_name,module_name,section_name;
 
-  d3.json("https://people.ischool.berkeley.edu/~niavivek/Design_dot/modules.json",function(error, json_data) {
+d3.json("https://people.ischool.berkeley.edu/~niavivek/Design_dot/modules.json",function(error, json_data) {
+// $.getJSON("https://people.ischool.berkeley.edu/~niavivek/Design_dot/modules.json", function(json_data) {
     var json_data = json_data['Modules'];
     if (selected_value == "module"){
       
@@ -209,20 +210,20 @@ change_name();
 //Function to change course/module/section name based on radio button selection
 function change_name(){
 if (selected_value == "module"){
-document.getElementById("module_name").innerHTML += "<h3>Course: "+course_name+"</h3>";
+document.getElementById("module_name").innerHTML += "<h3 class=\"collap_header\">Course: "+course_name+"</h3>";
 }
 else if (selected_value == "section"){
-document.getElementById("module_name").innerHTML += "<h3>Module Name: "+module_name+"</h3>";
+document.getElementById("module_name").innerHTML += "<h3 class=\"collap_header\">Module Name: "+module_name+"</h3>";
 }
 else{
-document.getElementById("module_name").innerHTML += "<h3>Section Name: "+section_name+"</h3>";
+document.getElementById("module_name").innerHTML += "<h3 class=\"collap_header\">Section Name: "+section_name+"</h3>";
 }
 };
 
 //Add tooltip for the course progress bar
 var tooltip = d3.select("body")
   .append("div")
-  .attr('class', 'tooltip');
+  .attr('class', 'tooltip_1');
 
     x.domain(d3.extent(data, function(d) { return d.number; }));
     y.domain([0, d3.max(data, function(d) { return d.length; })]);
@@ -254,10 +255,9 @@ course_progress.selectAll("dot")
     .attr("width", 120)
     .attr("height", 120)
     .html(function(d) {
-        if (d['visited'] == "True") return'<i class="fa fa-check-circle fa-2x" style="color:green"></i>';
-         else if (d['visited'] == "False") return '<i class="fa fa-circle fa-2x" style="color:lightgrey"></i>';
-          else return '<i class="fa fa-circle-thin fa-2x" style="color:black"></i>';})
-    // .attr("color",function(d) {if (d['visited'] == "True") return 'green'; else if (d['visited'] == "False") return 'lightgrey'; else return 'black'})
+        if (d['visited'] == "True") return'<small><i class="fa fa-check-circle fa-2x" style="color:green"></i></small>';
+         else if (d['visited'] == "False") return '<small><i class="fa fa-circle fa-2x" style="color:lightgrey"></i></small>';
+          else return '<small><i class="fa fa-circle-thin fa-2x" style="color:black"></i></small>';}) // .attr("color",function(d) {if (d['visited'] == "True") return 'green'; else if (d['visited'] == "False") return 'lightgrey'; else return 'black'})
     .attr("x", function(d) { return x(d.number)-10; })
     .attr("y", function(d) { return y(d.length)-12; })
     .on("mouseover", function(d) {

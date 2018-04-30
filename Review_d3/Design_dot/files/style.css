@@ -1,11 +1,11 @@
-body { font: 12px Arial;}
+.body_1 { }
 svg{
-	display: inline;
+  display: inline;
 }
 
 .label { 
   font-family: Arial, sans-serif;
-  font-size: 20px;
+  font-size: 16px !important;
   font-weight:bold;
 }
 
@@ -18,63 +18,55 @@ svg{
     opacity:60%;
     /*margin: 100px 100px auto 100px;*/
 }
-.skill_name{ 
-  font-family: Arial, sans-serif;
-  font-size: 18px;
-  font-weight:bold;
-  font-style: italic;
-  /*float:left;*/
-}
-
 
 .circle{
-	fill:none;
-	color:white;
+  fill:none;
+  color:white;
 }
 
 #radio_button{
-	position: relative;
-	width: 80%;
+  position: relative;
+  width: 80%;
     margin: 0 auto;
     /*align-items: center;*/
     display: inline-block;
-	text-align: center;
+  text-align: center;
 
-	margin: auto 100px auto 100px;
+  margin: auto 100px auto 100px;
 }
 
 .course_progress{
-	position:relative;
-	display:inline-block;
-	margin: auto auto auto 30px;
-	 width:100%;
-	  height:80px;
+  position:relative;
+  display:inline-block;
+  margin: auto auto auto 30px;
+   width:100%;
+    height:80px;
 }
 
-.container{
-	position:relative;
-	margin: auto auto auto 30px;
-	 width:100%;
-	  height:420px;
-	  display: inline-block;
-	   float:left;
-	   /*added for collapsible */
-	   padding: 0 18px;
+.container_1{
+  position:relative;
+  margin: auto auto auto 30px;
+   width:100%;
+    height:420px;
+    display: inline-block;
+     float:left;
+     /*added for collapsible */
+     padding: 0 18px;
   /*display: none;*/
   overflow: hidden;
   /*background-color: #f1f1f1;*/
 }
 .radial{
-	position: relative;
-	width: 45%;
-	height:260px;
+  position: relative;
+  width: 45%;
+  height:260px;
     margin: auto auto auto 30px;
     /*vertical-align:top;*/
     /*align-items: left;*/
     /*display: inline-block;*/
-	text-align: left;
-	float:left;
-	/*margin: 0px 100px 0px 100px;*/
+  text-align: left;
+  float:left;
+  /*margin: 0px 100px 0px 100px;*/
 }
 
 .link_container{
@@ -82,12 +74,12 @@ svg{
     /*vertical-align:top;*/
     /*align-items: left;*/
     /*display: inline-block;*/
-	text-align: left;
-	float:left;
-	/*margin: 0px 100px 0px 100px;*/
+  text-align: left;
+  float:left;
+  /*margin: 0px 100px 0px 100px;*/
 }
 .tab{
-	display:inline-block; 
+  display:inline-block; 
       margin-left: 14px;
     font-family: Arial, sans-serif;
   font-size: 14px;
@@ -109,30 +101,30 @@ a:active {
 }
 
 .link{
-	position: relative;
-	width: 45%;
-	height:260px;
+  position: relative;
+  width: 45%;
+  height:260px;
     margin: auto auto auto auto;
     /*vertical-align:top;*/
     /*align-items: left;*/
     /*display: inline-block;*/
-	text-align: left;
-	float:left;
-	/*margin: 0px 100px 0px 100px;*/
+  text-align: left;
+  float:left;
+  /*margin: 0px 100px 0px 100px;*/
 }
 
 .g-bar{
-	position: relative;
-	width: 80%;
+  position: relative;
+  width: 80%;
     margin: auto auto auto 30px;
     vertical-align:top;
     /*align-items: left;*/
     display: inline-block;
-	text-align: left;
-	float:center;
+  text-align: left;
+  float:center;
 }
 #module,#section,#subsection {
-	margin: 0 10px 0 10px;
+  margin: 0 10px 0 10px;
 }
 
 .radial-progress__text {
@@ -188,31 +180,31 @@ a:active {
 {
   padding: 20px;
   display: inline;
-	text-align: center;
-	/*float:center;*/
-  	/*position: relative;*/
- 	width: 25%;
-	height:20px;
+  text-align: center;
+  /*float:center;*/
+    /*position: relative;*/
+  width: 25%;
+  height:20px;
     /*margin: auto auto auto auto;*/
 }
  .top_progress_score {
   padding: 20px;
   display: inline;
-	text-align: left;
-	/*float:center;*/
-  	/*position: relative;*/
- 	width: 25%;
-	height:20px;
+  text-align: left;
+  /*float:center;*/
+    /*position: relative;*/
+  width: 25%;
+  height:20px;
     /*margin: auto auto auto 15px;*/
 }
 .message {
   /*padding: 20px;*/
   display: inline;
-	text-align: center;
-	float:center;
-  	/*position: relative;*/
- 	width: 25%;
-	height:20px;
+  text-align: center;
+  float:center;
+    /*position: relative;*/
+  width: 25%;
+  height:20px;
     /*margin: auto auto auto auto;*/
 }
 
@@ -221,7 +213,7 @@ a:active {
       margin-left: 0px;
     font-family: Arial, sans-serif;
   font-size: 14px;
-	float:center;
+  float:center;
     /*margin: auto auto auto auto;*/
 }
 .tab_best {
@@ -229,19 +221,19 @@ a:active {
       margin-left: 8px;
     font-family: Arial, sans-serif;
   font-size: 14px;
-	color:#b72667;
-	font-weight: bold;
-	float:center;
+  color:#b72667;
+  font-weight: bold;
+  float:center;
     /*margin: auto auto auto auto;*/
 }
 .tab_better {
-	display:inline; 
+  display:inline; 
       margin-left: 8px;
     font-family: Arial, sans-serif;
   font-size: 14px;
-	color:orange;
-	font-weight: bold;
-	float:center;
+  color:orange;
+  font-weight: bold;
+  float:center;
     /*margin: auto auto auto auto;*/
 }
 
@@ -250,35 +242,49 @@ a:active {
       margin-left: 8px;
     font-family: Arial, sans-serif;
   font-size: 14px;
-	color:#f20000;
-	font-weight: bold;
-	float:center;
+  color:#f20000;
+  font-weight: bold;
+  float:center;
     /*margin: auto auto auto auto;*/
 }
 
 
 .legend{
   height:20;
-	font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 12px;
   display: block;
 }
 
 .bar{
-	fill: green;
+  fill: green;
 }
 .bar_1{
-	/*fill: #8c8c8c;*/
-	fill:lightgrey;
+  /*fill: #8c8c8c;*/
+  fill:lightgrey;
 }
-.fa-check-square{
-	/*color:green;*/
-	/*text-anchor:middle;*/
+.fa-check-circle,.fa-circle,.fa-circle-thin{
+  vertical-align: top !important;
+  font-style:normal !important;
+  line-height:normal !important;
+  font-size: 1.8em !important;
+  /*color:green;*/
+  /*text-anchor:middle;*/
 }
 
-.help-tip{
+.fa-caret-down {
+  vertical-align: top !important;
+  font-style:normal !important;
+  line-height:normal !important;
+  text-align: center !important;
+  font-size: 2em !important;
+  /*color:green;*/
+  /*text-anchor:middle;*/
+}
+
+.help-tip1{
     position: absolute;
-    top: 15px;
+    top: 0px;
     left: 350px;
     text-align: center;
     font-weight:bold;
@@ -288,19 +294,22 @@ a:active {
     border-radius: 50%;
     width: 14px;
     height: 14px;
-    font-size: 14px;
-    line-height: 13px;
+    font-size: 10px;
+    line-height: normal !important;
     cursor: default;
+    opacity:1;
 }
 
-.help-tip:before{
+.help-tip1:before{
     content:'?';
     font-weight: bold;
     color:black;
+/*    line-height: normal !important;*/
 }
 
-.help-tip:hover p{
+.help-tip1:hover p{
     display:block;
+     background-color: black !important;
     transform-origin: 100% 0%;
     font-weight:bold;
     -webkit-animation: fadeIn 0.3s ease-in-out;
@@ -308,35 +317,35 @@ a:active {
 
 }
 
-.help-tip p{    /* The tooltip */
+.help-tip1 p{    /* The tooltip */
     display: none;
     font-weight:bold;
     text-align: left;
-    background-color: #1E2021;
+    background-color: #1E2021 !important;
     padding: 10px;
     width: 300px;
     position: relative;
     border-radius: 3px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
     right: -4px;
-    color: #FFF;
-    font-size: 13px;
+    color: #FFF !important;
+    font-size: 13px !important;
     line-height: 1.4;
 }
 
-.help-tip p:before{ /* The pointer of the tooltip */
+.help-tip1 p:before{ /* The pointer of the tooltip */
     position: absolute;
     content: '';
     width:0;
     height: 0;
     border:6px solid transparent;
-    border-bottom-color:#1E2021;
+    border-bottom-color:#1E2021 !important;
     left:10px;
     top:-12px;
     font-weight:bold;
 }
 
-.help-tip p:after{ /* Prevents the tooltip from being hidden */
+.help-tip1 p:after{ /* Prevents the tooltip from being hidden */
     width:100%;
     font-weight:bold;
     height:40px;
@@ -349,11 +358,12 @@ a:active {
 
 
 /* Style the button that is used to open and close the collapsible content */
-.collapsible {
-	/*display:inline-block;*/
-  background-color: white;
+button.collapsible_1 {
+  /*display:inline-block;*/
+    background-color: white !important;
+  background-image: none !important;
   cursor: pointer;
-
+  fill:white !important;
   /*padding: 18px;*/
   width: 100%;
   border: none;
@@ -369,19 +379,20 @@ a:active {
 }
 
 .tab_head{
-	display:inline-block; 
+  display:inline-block; 
       margin-left: 14px;
     font-family: Arial, sans-serif;
   font-size: 18px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover{
-  /*background-color: #ccc;*/
+.active,button.collapsible_1:hover{
+  background-color: none !important;
+  background-image: none !important;
 }
 
 /* Style the collapsible content. Note: hidden by default */
-.content{
+.content_1{
  /*padding: 0 px;*/
     background-color: white;
     max-height: 0;
@@ -399,9 +410,9 @@ a:active {
      margin: auto auto auto auto;
 }
 
-.collapsible:after {
-	position:relative;
-	font-family: 'FontAwesome';
+.collapsible_1:after {
+  position:relative;
+  font-family: 'FontAwesome';
   content: "\f054";
     /*content: '\f078';  Unicode character for "plus" sign (+) */
     font-size: 20px;
@@ -412,14 +423,14 @@ a:active {
 }
 
  .active:after{
-	/*F078 */
+  /*F078 */
   content: '\f078';
   color:#0099CD;
-	font-family: 'FontAwesome';
+  font-family: 'FontAwesome';
     /*content: "\f054";  Unicode character for "minus" sign (-) */
 }
 
-.tooltip {
+.tooltip_1 {
     position: absolute;
     z-index: 10;
     visibility: hidden;
@@ -429,7 +440,7 @@ a:active {
     border-radius: 4px;
     font-weight: bold;
     /*color: white;*/
-	text-align: left;
+  text-align: left;
     background-color: #1E2021;
     padding: 10px;
     /*width: 300px;*/
@@ -443,7 +454,7 @@ a:active {
 
 }
 
-.tooltip:after {
+.tooltip_1:after {
        content: " ";
     position: absolute;
     bottom: 100%;  /* At the top of the tooltip */
@@ -454,13 +465,13 @@ a:active {
     border-color: transparent transparent black transparent;
 }
 .here{
-	font-family: Arial, sans-serif;
-	width:120px;
+  font-family: Arial, sans-serif;
+  width:120px;
   height:15px;
-	font-size:14px;
-	font-weight:bold;
-	text-align:center;
-	 color:red;
+  font-size:14px;
+  font-weight:bold;
+  text-align:center;
+   color:red;
    display: block;
 
    /*position: absolute;*/
@@ -472,11 +483,34 @@ a:active {
     /*margin-bottom:15px;*/
 }
 .legend1{
-	font-size:14px;
-	display:block;
+  font-size:14px;
+  display:block;
 }
-h3{
-	font-size:16px;
+h3.collap_header{
+  color:black ;
+  font-size:16px !important;
+  font-family: Arial, sans-serif ;
+  align-items: center ;
+text-align: center ;
+}
+h2.skill_header{
+  color:black !important;
+  font-weight:bold !important;
+  font-size:20px !important;
+  font-family: Arial, sans-serif !important;
+}
+
+h2.skill_name{
+  color:black !important;
+  font-weight:bold !important;
+  font-style:italic !important;
+  font-size:18px !important;
+  font-family: Arial, sans-serif !important;
+}
+h3.skill_title{
+  font-weight:bold !important;
+  font-size:15px !important;
+  font-family: Arial, sans-serif !important;
 }
 .module_name{
 position: relative;
@@ -489,44 +523,22 @@ text-align: center;
 margin: 0px 100px 0px 100px;
 }
 
-.fa-custom-stack{
-/*display: inline-block;*/
-/*margin-top: 0%;*/
-/*position: relative;*/
-/*width: 2em;
-height: 2em;
-line-height: 2em;*/
-/*vertical-align: middle;*/
-}
-
 .fa-stack {
   text-align: center;
   vertical-align: top !important;
 }
 
-.fa-caret-down {
-  vertical-align: top !important;
-    text-align: center !important;
-  /*position: absolute;*/
-  /*bottom: 0;*/
-}
 
-.fa-check-circle {
-  vertical-align: top !important;
 
-  /*position: absolute;*/
-  /*top: 0;*/
-}
 
 .fa_custom{
   vertical-align: bottom;
   display: block;
 /*display: inline-block;*/
-font: normal normal normal 14px/1 FontAwesome;
-    font-size: 14px;
+font: normal normal normal 2em/1 FontAwesome;
+    font-size: 2em;
 text-rendering: auto;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 
 }
-
