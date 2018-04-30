@@ -1,7 +1,25 @@
 # 1.FinalProjectMOOCsAdaptivity 
-### Feel Free to edit ###
-This repo is a copy of multi mooc adaptivity folder from CAHLR.  
-Clone the repo, to read/ run the programs on your system.  
+This repo contains python notebooks: 
+1. DKT   --- DKT/working_notebooks
+2. Review page html format --- /Review_d3
+
+
+DKT: 
+dkt phase 1: dkt based only on the quizzes   
+dkt phase 2 : dkt based quizzes and behaviour
+Each phase needs three files :
+1. skill_dict json
+2. event_stream csv 
+3. response_stream csv
+
+Preprocess code : converts edx data to a specific format as read in the modelling  files. Each student is represented by a stream of events each encoded by mapping from skill_dict json .
+REquired format:
+<p align="center">
+  <img src="/pic/data_dkt.png" width="350"/>
+</p>
+
+
+
 To add comments we can do any of these: 
 ### 1. Write comments on github online.
       Open the file.  

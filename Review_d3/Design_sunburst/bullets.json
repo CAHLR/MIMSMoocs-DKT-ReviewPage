@@ -1,6 +1,0 @@
-[
-  {"title":"Asynchronous Fundamentals","subtitle":"%","ranges":[100],"measures":[20,35],"markers":[30]},
-  {"title":"Callback Functions","subtitle":"%","ranges":[100],"measures":[45,48],"markers":[40]},
-  {"title":"Timers","subtitle":"%","ranges":[100],"measures":[30,40],"markers":[35]},
-  {"title":"DOM Events","subtitle":"%","ranges":[100],"measures":[30,30],"markers":[20]}
-]
