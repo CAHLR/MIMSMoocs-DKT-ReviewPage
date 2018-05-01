@@ -5,10 +5,10 @@ This repo contains the following code files:
 3. Moocs Behavioural model --- Commented code
 
 
-1. DKT:  DKT has these dkt modelling and preprocessing files:
+##### DKT:  DKT has these dkt modelling and preprocessing files:
 
 dkt phase 1: dkt based only on the quizzes   
-dkt phase 2 : dkt based quizzes and behaviour 
+dkt phase 2 : dkt based on quizzes and behaviour 
 
 Each phase needs three files :
 1. skill_dict json
@@ -19,7 +19,7 @@ Preprocess code :
 Converts edx data to a specific format as read in the modelling  files. Each student is represented by a stream of events, each encoded by a mapping from skill_dict json .
 Required format:
 <p align="center">
-  <img src="/pic/data_dkt.png" width="500"/>
+  <img src="/pic/data_dkt.png" width="800"/>
 </p>
 
 
