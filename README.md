@@ -12,7 +12,7 @@
 Converts edx data to a specific format as read in the modelling  files. Each student is represented by a stream of events, each encoded by a mapping from skill_dict json .
 Required format:
 <p align="center">
-  <img src="/dkt/pic/data_dkt.png" width="800"/>
+  <img src="dkt/pic/data_dkt.png" width="800"/>
 </p>
 
 
