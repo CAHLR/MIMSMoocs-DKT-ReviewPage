@@ -29,7 +29,7 @@ dkt baseline: dkt based on majority class
 
 
 
-### To run a DKT phase 1 model:
+### To train DKT phase 1 model:
 Files in working notebooks folder, uses tensorflow backend in keras.
 1. Read edx  raw log data file in __initial_preindex_from_log.ipynb__  to get a __pre_index_data.csv__ file which will have followings fields for each log entry:  
 *user, timestamp, is_problem, is_correct,unique_represenation_of_event, time_spent*
